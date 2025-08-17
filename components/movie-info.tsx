@@ -11,7 +11,7 @@ export default async function MovieInfo({ id }: { id: string }) {
   const movie = await getMovie(id);
   return (
     <div className={styles.container}>
-      <Image
+      <img
         src={movie.poster_path}
         className={styles.poster}
         alt={movie.title}
